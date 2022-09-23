@@ -78,65 +78,6 @@
             transform: translateX(0px);
   }
 }
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  color: #777777;
-  font-size: 1.6rem;
-  letter-spacing: 2px;
-  padding: 5rem;
-  background-color: white;
-}
-
-.title-first {
-  color: #ffffff;
-}
-.title-first__first {
-  font-weight: 800;
-  font-size: 5rem;
-  line-height: 6rem;
-  letter-spacing: 0.8rem;
-  text-transform: uppercase;
-  display: block;
-  -webkit-animation-name: lefttoRight;
-          animation-name: lefttoRight;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  background: white;
-  color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
-  text-shadow: 0px 0.2rem 0.3rem rgba(255, 255, 255, 0.527);
-}
-.title-first__second {
-  font-weight: 200;
-  font-size: 3.8rem;
-  line-height: 4.8rem;
-  letter-spacing: 0.4rem;
-  display: block;
-  -webkit-animation-name: righttoLeft;
-          animation-name: righttoLeft;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-  margin-bottom: 4rem;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
 .btn_animated {
   -webkit-animation: BtnToUp 2s ease-out 0.7s;
           animation: BtnToUp 2s ease-out 0.7s;
@@ -190,6 +131,31 @@ body {
   transition: all 0.5s;
 }
 
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #777777;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  padding: 5rem;
+  background-color: white;
+}
+
+.container {
+  background-color: rgba(247, 247, 247, 0.5);
+}
+
 .header {
   position: relative;
   height: 95vh;
@@ -198,7 +164,7 @@ body {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
 }
 .header__logo {
-  height: 9rem;
+  height: 7rem;
   position: absolute;
   left: 50px;
   top: 5rem;
@@ -213,24 +179,51 @@ body {
   text-align: center;
 }
 
-.row {
-  max-width: 114rem;
-  background: gold;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+.title-first {
+  color: #ffffff;
 }
-
-*, ::after, ::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.title-first__first {
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 6rem;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  display: block;
+  -webkit-animation-name: lefttoRight;
+          animation-name: lefttoRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: white;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-shadow: 0px 0.2rem 0.3rem rgba(255, 255, 255, 0.527);
 }
-
-html {
-  font-size: 62.5%;
-}
-
-.container {
-  background-color: rgba(247, 247, 247, 0.5);
+.title-first__second {
+  font-weight: 200;
+  font-size: 3.8rem;
+  line-height: 4.8rem;
+  letter-spacing: 0.4rem;
+  display: block;
+  -webkit-animation-name: righttoLeft;
+          animation-name: righttoLeft;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  margin-bottom: 4rem;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
